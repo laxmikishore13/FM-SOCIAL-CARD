@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*=================DESIGN SYSTEM===================*/
+
+:root {
+  --color-grey-900: #141414;
+  --color-grey-800: #1f1f1f;
+  --color-grey-700: #333;
+  --color-green: #c4f82a;
+  --color-white: #fff;
+
+  --font-large: 24px;
+  --font-medium: 14px;
+
+  --space-500: 40px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-150: 12px;
+  --space-100: 8px;
+  --space-50: 4px;
+}
+
+/*=================RESETS===================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--color-grey-900);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.social-card {
+  width: 384px;
+  height: 611px;
+  background: var(--color-grey-800);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.social-card img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--space-300);
+}
+
+.social-card-info {
+  margin-bottom: var(--space-300);
+}
+
+.social-card-info h1 {
+  font-size: var(--font-large);
+  color: var(--color-white);
+}
+
+.social-card p {
+  font-size: var(--font-medium);
+  margin-bottom: var(--space-300);
+  color: var(--color-white);
+}
+
+.social-card-info p {
+  font-size: var(--font-medium);
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.social-card-btns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+.social-card-btns button {
+  width: auto;
+  height: 45px;
+  border-radius: 8px;
+  background: var(--color-grey-700);
+  color: var(--color-white);
+  border: none;
+  font-size: var(--font-medium);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .social-card {
+    width: 327px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .social-card {
+    width: 456px;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: hsl(228, 45%, 44%);
+}
+
+.attribution {
+  font-size: var(--font-large);
+  text-align: center;
+  padding: var(--space-200);
+}
